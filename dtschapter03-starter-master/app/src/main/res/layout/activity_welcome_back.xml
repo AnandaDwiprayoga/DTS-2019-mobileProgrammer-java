@@ -82,6 +82,18 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:textSize="18sp"
+        android:textColor="#313131"
+        android:fontFamily="@font/montserrat_semi_bold"
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="clickForget"/>
 
     <Button
         android:layout_width="match_parent"
@@ -96,7 +108,8 @@
         android:layout_marginTop="80dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="200dp"/>
+        android:layout_marginBottom="200dp"
+        android:onClick="postLogin"/>
 
 
 

@@ -58,7 +58,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="72dp"
-        android:fontFamily="@font/montserrat_light"/>
+        android:fontFamily="@font/montserrat_light"
+        android:onClick="clickLogin"/>
     
     <Button
         android:layout_width="match_parent"
@@ -69,5 +70,6 @@
         app:layout_constraintBottom_toTopOf="@+id/textLogin"
         android:layout_marginBottom="32dp"
         android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"/>
+        android:layout_marginEnd="48dp"
+        android:onClick="clickGetStarted" />
 </android.support.constraint.ConstraintLayout>

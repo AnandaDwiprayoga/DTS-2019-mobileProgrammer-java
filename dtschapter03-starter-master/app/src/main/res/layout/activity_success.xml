@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:text="Successful!!"
         android:textSize="32sp"
-        android:fontFamily="@font/._montserrat_semi_bold.otf"
+        android:fontFamily="@font/montserrat_semi_bold"
         app:layout_constraintTop_toTopOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
