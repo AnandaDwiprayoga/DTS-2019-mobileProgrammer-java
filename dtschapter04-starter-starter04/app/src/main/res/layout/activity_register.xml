@@ -6,4 +6,157 @@
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
 
+    <TextView
+        android:id="@+id/Judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:textSize="32sp"
+        android:textColor="#313131"
+        android:fontFamily="@font/montserrat_semi_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/labelNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textSize="20sp"
+        android:textColor="#313131"
+        app:layout_constraintTop_toBottomOf="@+id/Judul"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/inputNama"
+        android:layout_width="361dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:hint="Masukkan namamu"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelNama" />
+
+    <TextView
+        android:id="@+id/labelLahir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Lahir"
+        android:textSize="20sp"
+        android:textColor="#313131"
+        app:layout_constraintTop_toBottomOf="@id/inputNama"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/inputTanggal"
+        android:layout_width="361dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:hint="yyyy/mm/dd"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelLahir" />
+
+    <TextView
+        android:id="@+id/labelGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:textSize="20sp"
+        android:textColor="#313131"
+        app:layout_constraintTop_toBottomOf="@id/inputTanggal"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp" />
+    
+    <RadioGroup
+        android:id="@+id/inputGender"
+        android:layout_width="386dp"
+        android:layout_height="31dp"
+        app:layout_constraintTop_toBottomOf="@id/labelGender"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/lakilaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-Laki"
+            android:layout_marginStart="24dp"
+            />
+        <RadioButton
+            android:id="@+id/perempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:layout_marginStart="24dp"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/labelUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="20sp"
+        android:textColor="#313131"
+        app:layout_constraintTop_toBottomOf="@id/inputGender"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/inputUser"
+        android:layout_width="361dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:hint="Masukkan username anda"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelUser" />
+
+    <TextView
+        android:id="@+id/labelPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="20sp"
+        android:textColor="#313131"
+        app:layout_constraintTop_toBottomOf="@id/inputUser"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="361dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:hint="Masukkan password anda"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelPassword" />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar Sekarang"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:background="@drawable/button_red"
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="clickDaftar"/>
 </android.support.constraint.ConstraintLayout>

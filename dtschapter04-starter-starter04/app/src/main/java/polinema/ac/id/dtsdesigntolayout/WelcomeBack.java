@@ -62,6 +62,8 @@ public class WelcomeBack extends AppCompatActivity {
 
     public void clickSignUp(View view) {
         // Panggil intent sign up
+        Intent i = new Intent(WelcomeBack.this, RegisterActivity.class);
+        startActivity(i);
     }
 
     public  static boolean isValidEmail(String email){
